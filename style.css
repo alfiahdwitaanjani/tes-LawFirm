@@ -1,0 +1,319 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f9f9f9;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #d97706;
+}
+
+/* Logo */
+.logo-icon {
+    background: #000;
+    color: #fbbf24;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.logo-sub {
+    font-size: 10px;
+    color: #666;
+}
+
+.logo-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background: #000;
+    color: #fff;
+    padding: 100px 0;
+    text-align: left;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1555374018-13a8994ab246?q=80&w=2070&auto=format&fit=crop') center/cover;
+    opacity: 0.3;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #fcd34d, #f59e0b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-btns {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(to right, #fcd34d, #f59e0b);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-outline {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section */
+.section {
+    padding: 80px 0;
+}
+
+.section.dark {
+    background: #111;
+    color: #eee;
+}
+
+.img-rounded {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* Checklist */
+.checklist {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.checklist li {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.checklist i {
+    color: #f59e0b;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer .small {
+    font-size: 12px;
+    color: #777;
+}
+
+/* WhatsApp Button */
+.wa-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(to right, #fcd34d, #f59e0b);
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lawyer-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.lawyer-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #eee;
+}
+
+.lawyer-role {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.lawyer-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+.info-item i {
+    flex-shrink: 0;
+    margin-top: 4px;
+    /* biar ikon sejajar dengan teks multi-baris */
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.value-item {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.value-item h3 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #b88a44;
+    /* warna emas/coklat biar elegan */
+}
+
+.value-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.value-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.value-card i {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    color: #b88a44;
+    margin-top: 4px;
+}
+
+.value-card h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.value-card p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
